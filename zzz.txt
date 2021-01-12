@@ -1,0 +1,50 @@
+==============Lesson 33. Project Introduction
+==============Lesson 34. MongoDB Atlas Setup
+we will build our custom api
+mongodb: you can install it or use mongodb atlas
+mongodb atlas: create Project
+               create cluster (free)
+once OK: create db user & access IP@ 
+
+next lesson: we install al dependencies
+
+==============Lesson 35. Dependencies & Basic Express Server
+*********
+npm init -y 
+npm i express bcryptjs jsonwebtoken config express-validator mongoose
+npm i -D nodemon concurrently 
+
+  "scripts":
+    "start": "node server.js"
+    "server": "nodemon server.js"
+
+touch server.js 
+*********
+
+postman (because we haven't react app)
+npm init -y 
+
+1.regular dependencies:
+npm i express bcryptjs jsonwebtoken config express-validator mongoose
+express ->  handle routing (endpoints)
+bcryptjs -> encrypt password 
+jsonwebtoken -> to access protectif route
+config  -> for global variables 
+express-validator -> to validate any body data that is comme in. ex: user has to have email 
+mongoose ->  ddeal with db & create models
+
+2.dept dependencies:
+npm i -D nodemon concurrently 
+nodemon -> keep watching the server
+concurrently -> run our backent in react frontend at the same time 
+
+package.json:
+  "scripts":
+    "start": "node server.js" -> used for deployement 
+    "server": "nodemon server.js" -> for dev env (npm run server)
+
+server.js -> entrypoint to our backend 
+
+next lesson we create routes, but in seperate files (user, contacts & auth)
+
+==============Lesson 36. Backend Routes
