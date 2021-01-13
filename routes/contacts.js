@@ -30,5 +30,4 @@ router.put('/:id', (req,res) =>{
     res.send('Contact updated')
 })
 
-
 module.exports = router

@@ -6,7 +6,7 @@ mongodb atlas: create Project
                create cluster (free)
 once OK: create db user & access IP@ 
 
-next lesson: we install al dependencies
+next lesson: we install all dependencies
 
 ==============Lesson 35. Dependencies & Basic Express Server
 *********
@@ -65,3 +65,13 @@ then, you should use postman to test them
 next video we start to implement our db.
 
 ==============Lesson 37. Connect MongoDB To Our App
+create ./config/default.json -> for global variable, ex: mongoURI: connection string 
+create ./config/db.js -> here we use mongoose to connect to db
+
+Next lesson we add functionnalities to register our user
+
+
+
+==============Lesson 38
+
+
