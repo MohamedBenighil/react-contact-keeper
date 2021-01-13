@@ -71,7 +71,15 @@ create ./config/db.js -> here we use mongoose to connect to db
 Next lesson we add functionnalities to register our user
 
 
+==============Lesson 38. User Model & Validation
+we have to create: contact & user model
 
-==============Lesson 38
+models/User.js -> we create a schema : name, email, password, date 
+include user model into route/users.js
+to use res.send(req.body) -> you have to add a piece of middleware to server.js
+use express-validator to validate your input 
 
+next lesson we get the intercept the data, hash password, put it in db and return jsonwebtoken
+
+==============Lesson 39
 
