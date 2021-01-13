@@ -81,5 +81,9 @@ use express-validator to validate your input
 
 next lesson we get the intercept the data, hash password, put it in db and return jsonwebtoken
 
-==============Lesson 39
+==============Lesson 39. Hash Passwords & Register Route
+dealing with db and bcrypt returns Promises
+check if user exists with email 
+
+next lesson we want to return jwt to client to aceqq protected route
 
