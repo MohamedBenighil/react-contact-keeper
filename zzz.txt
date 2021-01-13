@@ -45,6 +45,23 @@ package.json:
 
 server.js -> entrypoint to our backend 
 
-next lesson we create routes, but in seperate files (user, contacts & auth)
+next lesson we create routes, but in seperate files (users, contacts & auth)
 
 ==============Lesson 36. Backend Routes
+routes/auth.js -> login a user and get token (route), get logged in user (route) 
+routes/contacts.js -> CRUD, each context is spécific to user 
+routes/users.js -> register route 
+
+server.js:
+app.use('/api/users', require('./routes/users')) -> when you hit "/api/users" then it forward it to "/api/users"
+...
+
+/routes/users
+we want to add signature for each route to what is going on 
+...
+
+then, you should use postman to test them 
+
+next video we start to implement our db.
+
+==============Lesson 37. Connect MongoDB To Our App
