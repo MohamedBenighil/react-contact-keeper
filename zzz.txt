@@ -104,4 +104,13 @@ config/default.json: "jwtSeceret": "Secert"
 NB: we need to create a piece of middleware, that check the token that sent in the header then extract the id 
 
 next lesson we implement login user
-==============Lesson 40.
+
+
+==============Lesson 41. Authenticate Route
+routes/auth.js: post (try to copy paste from users.js)
+
+Postman: use collection to store requests
+
+next: 
+we create a piece of middelware to validate the token and pull  out the user.id  (add it to our request object to get all contacts )
+we create a piece of middelware to validate token and to access protected routes.
