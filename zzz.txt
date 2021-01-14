@@ -83,7 +83,25 @@ next lesson we get the intercept the data, hash password, put it in db and retur
 
 ==============Lesson 39. Hash Passwords & Register Route
 dealing with db and bcrypt returns Promises
-check if user exists with email 
+check if user exists with email (findOne({anyAtt}))
 
-next lesson we want to return jwt to client to aceqq protected route
+400 -> bad request 
+500 -> server error
 
+salt represents a key.
+
+next lesson we want to return jwt to client to access protected route
+
+==============Lesson 40. Create & Respond With JSON Web Token
+when we register (or login) a user, we want to respond with jwt with some payload
+the payload in our case is user.id, because with that id we can access to all contacts
+user.id <==> user._id
+*********
+const payload = { user: {id: user.id}}
+jwt.sign(payload, config.get('jwtSecret'),{expiresIn: 3600}, (err, token) => if err throw token; res.json({token})) -> takes 4 params
+config/default.json: "jwtSeceret": "Secert"
+*********
+NB: we need to create a piece of middleware, that check the token that sent in the header then extract the id 
+
+next lesson we implement login user
+==============Lesson 40.
