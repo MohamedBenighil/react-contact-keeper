@@ -114,3 +114,25 @@ Postman: use collection to store requests
 next: 
 we create a piece of middelware to validate the token and pull  out the user.id  (add it to our request object to get all contacts )
 we create a piece of middelware to validate token and to access protected routes.
+
+
+==============Lesson 42. Auth Middleware & Protecting Routes
+we need to create middleware to send the token within the header when we want to access protected routes (for instance: to view the user's contacts)
+
+middleware just a function having access to request and response cycle and request and response object, 
+so, if we hit endpoint then we fireoff the middleware, and we need to check if there is a token in the header  
+
+all middleware function have next input.
+next input: move to next middleware after yo do what you want to do.
+401: anauthorized 
+
+middleware/auth.js: jwt & config & module.exports = function(req, res, next){
+...
+}
+
+all private route, we need to bring up middleware
+
+next lesson we implement contacts (private route) because they are specific to user.
+
+
+==============Lesson 42. 
