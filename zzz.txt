@@ -135,4 +135,10 @@ all private route, we need to bring up middleware
 next lesson we implement contacts (private route) because they are specific to user.
 
 
-==============Lesson 42. 
+==============Lesson 43. Contact Model & Get Contacts Route
+create Contact model having user att (to get all contacts with that user)
+routes/contact.js: implement get methode
+test with post man -> get empty list
+
+
+next lesson we add contact to specific user
