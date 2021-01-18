@@ -18,14 +18,29 @@ router.get('/', auth , async (req,res) =>{
         res.status(500).send('Server Error')
     }
 })
-
-
 //@route /api/contacts
 //@desc insert contact
 //@access Private
-
-router.post('/', (req,res) =>{
-    res.send('Contact insterted')
+router.post('/',auth, 
+// validation of name & email
+body('name','Name is required').not().isEmpty(),
+body('email','Email is required').isEmail(),
+async (req,res) =>{
+    const errors = validationResult(req)
+    if(!errors.isEmpty()){
+        return res.status(400).json({errors: errors.array()})
+    }
+    const {name, user,phone, type} = req.body
+    // notice we have to pass user attribute
+    const newContact = Contact({ name, user, phone, type, user: req.user.id})
+    try {
+        //notive contact object
+        const contact = await newContact.save()
+        res.status(200).json({contact})
+    } catch (err) {
+        console.log(err.message)
+        res.status(500).send('Server Error')
+    }
 })
 
 //@route /api/contacts

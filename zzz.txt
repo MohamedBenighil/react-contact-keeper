@@ -140,5 +140,9 @@ create Contact model having user att (to get all contacts with that user)
 routes/contact.js: implement get methode
 test with post man -> get empty list
 
-
 next lesson we add contact to specific user
+
+==============Lesson 44. Add Contact Route
+routes/contact.js: implement post methode (same as users.js: post)
+
+ 
