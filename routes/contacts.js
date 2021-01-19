@@ -21,6 +21,8 @@ router.get('/', auth , async (req,res) =>{
 //@route /api/contacts
 //@desc insert contact
 //@access Private
+
+
 router.post('/',auth, 
 // validation of name & email
 body('name','Name is required').not().isEmpty(),
@@ -48,7 +50,6 @@ async (req,res) =>{
 //@desc update contact
 //@access Private
 router.put('/:id', auth ,async (req,res) =>{
-
     const errors = validationResult(req)
     if(!errors.isEmpty()){
         res.status(400).json({errors: errors.array()})
@@ -86,19 +87,32 @@ router.put('/:id', auth ,async (req,res) =>{
 })
 
 
-
-
-
-
-
-
-
 //@route /api/contacts
 //@desc delete contact
 //@access Private
 router.delete('/:id', auth, async (req,res) =>{
-
-    
+    try {
+        //is contact with that id exists ?
+        let contact = await Contact.findById(req.params.id)
+        //no
+        if(!contact){
+            res.status(404).json({msg: "Contact not found"})
+        }
+        // yes
+        // but is it belongs to that user ?
+        // no
+        if(contact.user.toString()!== req.user.id){
+            res.status(401).json({msg: "No authorization"})
+        }
+        //yes
+        //delete it 
+        contact = await Contact.findByIdAndRemove(req.params.id)
+        res.json({msg: "Contact removed"})
+    } catch (err) {
+        console.log(err.message)
+        res.status(500).send('Server Error')
+    }
+        
 })
 
 
