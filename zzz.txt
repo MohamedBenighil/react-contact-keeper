@@ -144,5 +144,27 @@ next lesson we add contact to specific user
 
 ==============Lesson 44. Add Contact Route
 routes/contact.js: implement post methode (same as users.js: post)
+we see the relation between User and contacts
+
+
+==============Lesson Contact Update & Delete Routes
+Update:
+create contactFields object to get filled input from user
+try find contact by id ? 
+no -> return 404
+yes -> check if this contact belongs to the user 
+       no -> return 401
+       yes -> findByIdAndUpdate & retrun contact
+
+Delete: 
+try find contact by id ? 
+no -> return 404
+yes -> check if this contact belongs to the user 
+       no -> return 401
+       yes -> findByIdAndRemove & return 'contact removed'
+
+
+
+==============Lesson 45. Setup React & Concurrently
 
  
