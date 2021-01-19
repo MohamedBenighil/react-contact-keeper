@@ -166,5 +166,15 @@ yes -> check if this contact belongs to the user
 
 
 ==============Lesson 45. Setup React & Concurrently
+concurrently: to run backend & frontend server at the same terminal 
 
- 
+npx create-react-app client 
+
+backend: package.json: "client": "npm start --prefix client" -> start a client server
+                       "clientinstall": "npm install --prefix client" -> install dependencies of client
+                       "dev": "concurrently \"npm run server\" \"npm run client\"" -> run server and client
+client: package.json: (last element):
+"proxy": "http://localhost:5000" -> to avoid it when using axios
+
+
+next lesson we start to work with react
