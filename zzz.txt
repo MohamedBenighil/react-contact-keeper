@@ -178,3 +178,38 @@ client: package.json: (last element):
 
 
 next lesson we start to work with react
+
+
+==============Lesson 46. Cleanup, Navbar & Router Setup
+rm client/{.gitignore,README} -> because we have one in backend
+cd client && rm -rf .git 
+
+
+client : install dependecies -> npm i axios react-router-dom uuid react-transition-group 
+uuid -> id generator 
+react-transition-group -> animation 
+
+cp App.css client/src/App.css
+
+clean up:
+rm src/{logo.svg,serviceWorker.js,index.css,App.test.js}
+index.js -> remove unnecessary files
+App.js -> transform to arrow function
+
+public/index.html: remove comment & change the title, copy from fontawsome
+
+
+
+create Navbar:
+mkdir src/components/layout/Navbar.js: function with {icon, title} as input & propsTypes & defaultProps
+App.js : import Navbar, Router, Route, Switch Fragament
+App.js: replace div with Fragment
+App.js: create Routes to Home & About
+App.js: within div container create switch and its Routes to Home and About 
+App.js: import Home and Abou from components/pages/ 
+App.js: test if routes functianl : / & /about
+Navbar.js: create navigation Link  
+
+Next lesson we start to create our contact context
+
+==============Lesson 47
