@@ -212,4 +212,18 @@ Navbar.js: create navigation Link
 
 Next lesson we start to create our contact context
 
-==============Lesson 47
+==============Lesson 47. Contacts Context & Global State
+we have contacts for context (in this lesson)
+we have contacts for alert
+we have contacts for authentification
+
+we work with dummy data then with api.
+
+mkdir client/src/context/types.js -> 4.15 OK
+mkdir client/src/context/contact/contactContext.js -> 2.30 OK
+mkdir client/src/context/contact/ContactState.js -> 5.02, 5.34, 7.40OK, 8.52, 9.39
+mkdir client/src/context/contact/contactReducer.js
+
+ContactState.js: useReducer hook to acess to state and use dispatch to reducer 
+                  state -> to access anything in our state
+                  dispatch -> to dispatch object to reducer
