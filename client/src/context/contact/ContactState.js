@@ -18,20 +18,20 @@ const ContactState = props => {
     const initialSate = {
         contacts: [
             { 
-              id: 1,
-              name: 'Jill Johnson',
-              email: 'jill@gmail.com',
-              phone: '111-111-1111',
-              type: 'personal'
+                id: 1,
+                name: 'Jill Johnson',
+                email: 'jill@gmail.com',
+                phone: '111-111-1111',
+                type: 'personal'
             },
-            {              
+            {
                 id: 2,
                 name: 'Sara Watson',
                 email: 'jill@gmail.com',
                 phone: '222-222-2222',
                 type: 'personal'
             },
-            {   
+            {
                 id: 3,
                 name: 'Harry White',
                 email: 'harry@gmail.com',

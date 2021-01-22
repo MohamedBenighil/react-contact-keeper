@@ -227,3 +227,29 @@ mkdir client/src/context/contact/contactReducer.js
 ContactState.js: useReducer hook to acess to state and use dispatch to reducer 
                   state -> to access anything in our state
                   dispatch -> to dispatch object to reducer
+
+
+
+==============Lesson 48. Contacts & ContactItem Components
+Now we can acces to state & action of ContactState from any component
+touch client/src/components/contacts/Contacts.js
+touch client/src/components/contacts/ContactItem.js
+
+Contacts.js: 3.19: import contactContext
+                   create object with userContext hook (to get the state)
+                   destructor it and loop through them
+Home.js: 4:29: import Contact OK
+               rerurn grid of 2, one for form and the 2nd for <Contact />
+
+Contacts.js : 3.19 implement basic Contact OK
+ContactItem.js: 8.26 implement ContactItem OK
+Contacts.js : 9.15 import contactItem OK
+ContactItem.js: 10.38: we want 'professional' or 'personal' with capital (in client not in db ) OK
+ContactItem.js: 12:12: add email and phone OK 
+ContactItem.js: 13:00: add edit and delete buttons + proptype
+
+
+next we create a form to add our contact.
+
+
+==============Lesson 49.
