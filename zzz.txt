@@ -239,7 +239,7 @@ Contacts.js: 3.19: import contactContext
                    create object with userContext hook (to get the state)
                    destructor it and loop through them
 Home.js: 4:29: import Contact OK
-               rerurn grid of 2, one for form and the 2nd for <Contact />
+               return grid of 2, one for form and the 2nd for <Contact />
 
 Contacts.js : 3.19 implement basic Contact OK
 ContactItem.js: 8.26 implement ContactItem OK
@@ -252,4 +252,16 @@ ContactItem.js: 13:00: add edit and delete buttons + proptype
 next we create a form to add our contact.
 
 
-==============Lesson 49.
+==============Lesson 49. ContactForm Component
+touch client/src/components/contacts/ContactForm.js
+ContactForm.js : 2.14 : contactform state OK 
+ContactForm.js : 3.26 : contactform form: name input 
+ContactForm.js : 6.10 : contactform form: radio 
+ContactForm.js : 7.50 : onChange() 
+Home: 8.13: import ContactForm
+ContactForm.js : 10.47 : define onSubmit()
+ContactState.js : 13.55 : define addContact() : the contact comes in and immediatly send to payload
+ContactReducer.js: 13.50 add function to receive addContact() 
+
+
+==============Lesson 50.
