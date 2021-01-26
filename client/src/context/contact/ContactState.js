@@ -37,14 +37,16 @@ const ContactState = props => {
                 email: 'harry@gmail.com',
                 phone: '333-333-3333',
                 type: 'professional'
-            }]
+            }],
+
+            current: null
     }
 
     const [state, dispatch] =  useReducer(ContactReducer, initialSate)
 
     //Add Contact
     const addContact = contact => {
-        contact.id = 15
+        contact.id = v4()
         dispatch({
             type: ADD_CONTACT,
             payload: contact 
@@ -58,9 +60,21 @@ const ContactState = props => {
             payload: id 
         })
     }
+
     //Set Current Contact
+    const setCurrent = contact => {
+        dispatch({
+            type: SET_CURRENT,
+            payload: contact
+        })
+    }
     
     //Clear Current Contact 
+    const clearCurrent = () => {
+        dispatch({
+            type: CLEAR_CURRENT
+        })
+    }
     
     //Update Contact 
     
@@ -72,7 +86,10 @@ const ContactState = props => {
         value={{
             contacts : state.contacts,
             addContact,
-            deleteItem
+            current: state.current,
+            deleteItem,
+            setCurrent,
+            clearCurrent
         }}
         >
         {props.children}

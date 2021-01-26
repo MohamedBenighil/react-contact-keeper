@@ -273,4 +273,16 @@ contactState.js: 5.06 add deleteContact to value, because we provide this functi
 
 Next lesson we work on Edit button
 
-==============Lesson 51.
+==============Lesson 51. Set & Clear Current Contact
+when we click on Edit, we need to fill current attribute defined in ContextState.
+ContactState.js: 2.35 : define setCurrent & clearCurrent 
+contactReduer.js: 3.31 : define setCurrent & clearCurrent 
+ContactState.js: 4.00 : add current , setCurrent & clearCurrent
+ContactItem.js : 4.33 : onclick={() => setCurrent(contact)} of Delete button 
+ContactItem.js : 6.12 we ant to clear current att once we click on Delete 
+
+Then use react extention to see tha changes
+
+Next lesson we work on form to make it more dynmaic (we add contact to it ) + clear button 
+
+==============Lesson 52
