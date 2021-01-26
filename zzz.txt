@@ -261,7 +261,16 @@ ContactForm.js : 7.50 : onChange()
 Home: 8.13: import ContactForm
 ContactForm.js : 10.47 : define onSubmit()
 ContactState.js : 13.55 : define addContact() : the contact comes in and immediatly send to payload
-ContactReducer.js: 13.50 add function to receive addContact() 
+contactReducer.js: 13.50 add function to receive addContact() 
+
+Next we define Delete button
+==============Lesson 50. Delete Contact From UI
+contactItem.js:  2.52: import contactcontext to use deleteItem
+contactReducer.js: 4.51: we used filter 
+contactState.js: 5.06 add deleteContact to value, because we provide this function to our components
 
 
-==============Lesson 50.
+
+Next lesson we work on Edit button
+
+==============Lesson 51.
