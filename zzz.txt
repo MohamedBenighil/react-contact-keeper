@@ -283,6 +283,21 @@ ContactItem.js : 6.12 we ant to clear current att once we click on Delete
 
 Then use react extention to see tha changes
 
-Next lesson we work on form to make it more dynmaic (we add contact to it ) + clear button 
+Next lesson we work on form to make it more dynmaic (we add contact to it ) + clear button
 
-==============Lesson 52
+==============Lesson 52. Edit & Update Contact Action
+we want Add Contact title, Add Contact button apear dynamically
+we want to add clear button
+
+ContactFrome.js: desctructor addContact, current :3.23
+
+we want to fill the form's inputs with current as soon as the form is loaded (useEffect)
+
+ContactFrome.js: 3.23 should add the current att to form's input 
+ContactFrome.js: 5.12 titles & button change dynamically
+ContactFrome.js: 7.02 clear button <== we are here
+ContactFrome.js: 10.52 we have to add funtion to add/update button depending on add/update : onSubmit(){...}
+  ContactState.js :11.00 updateContact
+  contactReducer.js : 11.11 updateContact
+
+==============Lesson 53
