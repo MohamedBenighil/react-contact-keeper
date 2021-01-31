@@ -300,4 +300,13 @@ ContactFrome.js: 10.52 we have to add funtion to add/update button depending on 
   ContactState.js :11.00 updateContact
   contactReducer.js : 11.11 updateContact
 
-==============Lesson 53
+==============Lesson 53. Contact Filter Form & State
+we finished with crud, now we work with filtering (based on name or email)
+contactReducer.js : 4.48: FILTER_CONTACT & CLEAR_CONTACT 
+ContactState.js : 5.26 filterContact() & clearFilter() -> do not forget to add them to Provider
+NB: useRef hook used for small form (like filer in our case) 
+CotactFilter.js: 11.26 useEffect
+
+next we add some animation hen we add/delete
+
+11.31

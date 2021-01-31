@@ -39,12 +39,6 @@ const ContactFrom = () => {
         }else{
             addContact(contact)
         }
-       // setContact({
-       //     name: '',
-       //     email: '',
-       //     phone: '',
-       //     type:'personal'
-       // })
        clearAll()
     }
 
