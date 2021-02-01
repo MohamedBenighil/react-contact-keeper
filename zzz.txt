@@ -332,4 +332,13 @@ App.js: 7.57: add authContext as first provider
 
 Next, we create login & register forms, and add routes to acess them and private routes to protect "/" route
 
-==============Lesson 56
+==============Lesson 56. Register & Login Forms
+components/auth/Login.js
+components/auth/Register.js: create component level state (name, email, pass1, pass2) 5.47...5.49
+App.js : import register & add path 
+Navbarjs : add login and register 
+
+
+we want to add Alert to check if pass1 equals to pass2, or display backend errors 
+
+==============Lesson 57.
