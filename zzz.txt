@@ -312,3 +312,24 @@ next we add some animation hen we add/delete
 
 ==============Lesson 54. Basic Add & Delete Animation
 google: react-transition-group
+
+
+==============Lesson 55. Auth Context & Initial State
+we create whole context for authentification
+context/auth/AuthState.js : 
+context/auth/authReducer.js
+context/auth/authContext.js
+
+context/types: 1.07 add vars related to auths
+context/auth/authContext.js:  2.00  
+context/auth/AuthState.js : copy from ContactState 3.26 : import vars 
+context/auth/AuthState.js : 3.26 : import vars 
+context/auth/AuthState.js : 5.00 : initialState & useReducer  
+context/auth/AuthState.js : 5.49 : actions (comments)  
+context/auth/AuthState.js : 7.17: Provider
+App.js: 7.41: import authContext
+App.js: 7.57: add authContext as first provider 
+
+Next, we create login & register forms, and add routes to acess them and private routes to protect "/" route
+
+==============Lesson 56
