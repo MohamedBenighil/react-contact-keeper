@@ -341,4 +341,28 @@ Navbarjs : add login and register
 
 we want to add Alert to check if pass1 equals to pass2, or display backend errors 
 
-==============Lesson 57.
+==============Lesson 57. Alert Context, State & Component
+
+AlertState.js : 5.25 implementation
+App.js: 6.11 : import AlertState & usage
+alertReducer.js : 8.54 implementation
+loyout/Alerts.js: 9.00 implementation
+Apps.js: 12.00 import Alerts & usage
+Register.js: 14.31 import AlertContext & pull setAlert & use it OK 
+....
+
+
+
+Hello,
+
+I created Alert componenent which should appear once i submit register form but it does'nt, i don't know why ?
+
+I used context api which has 3 main files:
+1. AlertState.js : 
+2. App.js: 
+3. alertReducer.js:
+i used also one file called "types.js" having variables like so:
+
+and i created componenent "Alerts.js" having:
+
+and i imported it in main app "App.js"
